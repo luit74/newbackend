@@ -1,5 +1,4 @@
 // promises way of writing the code
-
 const asyncHandler = (requestHandler) =>{
     (req , res , next) =>{
         Promise.resolve(requestHandler(req , res , next))
